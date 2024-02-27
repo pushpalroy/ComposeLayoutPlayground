@@ -8,6 +8,9 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.appmason.composelayoutplayground.ui.screens.LayoutModifierExample
+import com.appmason.composelayoutplayground.ui.screens.ModifierChainExample1
+import com.appmason.composelayoutplayground.ui.screens.ModifierChainExample2
+import com.appmason.composelayoutplayground.ui.screens.SimpleIntrinsicExample
 import com.appmason.composelayoutplayground.ui.theme.ComposeLayoutPlaygroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -18,7 +21,9 @@ class MainActivity : ComponentActivity() {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
                     // SimpleIntrinsicExample()
-                    LayoutModifierExample()
+                    // LayoutModifierExample()
+                     ModifierChainExample1()
+                    // ModifierChainExample2()
                 }
             }
         }

@@ -20,7 +20,6 @@ fun SimpleIntrinsicExample() {
         Column(
             modifier = Modifier.padding(16.dp).width(IntrinsicSize.Max)
         ) {
-
             Message(text = "This")
             Message(text = "Is")
             Message(text = "A")
