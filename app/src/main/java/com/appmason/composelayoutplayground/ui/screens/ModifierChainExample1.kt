@@ -21,7 +21,7 @@ import com.appmason.composelayoutplayground.R
  * Constraints can be bounded indicating a min and max width and height.
  * Constraints can also be unbounded in which case the node is not constrained to any size, the max with and heights are then set to infinity.
  * Constraints can also be exact, where a node is asked to follow an exact size requirement, the mix and max bounds are set to the same value
- *
+ * Parents measure before their children, but are sized and placed after their children.
  */
 @Composable
 fun ModifierChainExample1() {
