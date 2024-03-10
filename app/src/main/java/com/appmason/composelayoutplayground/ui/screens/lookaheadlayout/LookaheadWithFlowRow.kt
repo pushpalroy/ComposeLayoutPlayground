@@ -51,6 +51,7 @@ import androidx.compose.ui.layout.LookaheadScope
 import androidx.compose.ui.layout.layout
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.util.animateBounds
 
 @Preview
 @OptIn(ExperimentalLayoutApi::class)

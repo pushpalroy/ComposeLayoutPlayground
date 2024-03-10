@@ -11,6 +11,7 @@ import com.appmason.composelayoutplayground.ui.screens.LayoutModifierExample
 import com.appmason.composelayoutplayground.ui.screens.ModifierChainExample1
 import com.appmason.composelayoutplayground.ui.screens.ModifierChainExample2
 import com.appmason.composelayoutplayground.ui.screens.SimpleIntrinsicExample
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithSimpleMovableContent
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookaheadWithAnimatedContentSize
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookaheadWithFlowRow
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookaheadWithLazyColumn
@@ -35,9 +36,10 @@ class MainActivity : ComponentActivity() {
 
                     // Look Ahead Examples
                     // LookaheadWithAnimatedContentSize()
-                    LookaheadWithPopularBoxWithConstraintsUsage()
+                    // LookaheadWithPopularBoxWithConstraintsUsage()
                     // LookaheadWithLazyColumn()
                     // LookaheadWithMovableContent()
+                    LookAheadWithSimpleMovableContent()
                     // LookaheadWithFlowRow()
                 }
             }

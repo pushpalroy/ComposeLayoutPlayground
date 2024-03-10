@@ -52,6 +52,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.appmason.composelayoutplayground.R
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.util.animateBounds
 
 @Preview
 @Composable
