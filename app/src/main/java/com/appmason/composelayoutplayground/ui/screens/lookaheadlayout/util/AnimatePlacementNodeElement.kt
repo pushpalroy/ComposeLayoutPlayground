@@ -46,7 +46,7 @@ class AnimatedPlacementModifierNode(
     override fun Placeable.PlacementScope.isPlacementApproachComplete(
         lookaheadCoordinates: LayoutCoordinates
     ): Boolean {
-        val target = with(lookaheadScope) {
+        val target: IntOffset = with(lookaheadScope) {
             lookaheadScopeCoordinates.localLookaheadPositionOf(lookaheadCoordinates).round()
         }
         offsetAnimation.updateTarget(target, coroutineScope)
@@ -62,12 +62,12 @@ class AnimatedPlacementModifierNode(
             val coordinates = coordinates
             if (coordinates != null) {
                 // Calculates the target offset within the lookaheadScope
-                val target = with(lookaheadScope) {
+                val target: IntOffset = with(lookaheadScope) {
                     lookaheadScopeCoordinates.localLookaheadPositionOf(coordinates).round()
                 }
                 // Uses the target offset to start an offset animation
                 val animatedOffset = offsetAnimation.updateTarget(target, coroutineScope)
-                // Calculates the *current* offset within the given LookaheadScope
+                // Calculates the current offset within the given LookaheadScope
                 val placementOffset = with(lookaheadScope) {
                     lookaheadScopeCoordinates.localPositionOf(coordinates, Offset.Zero).round()
                 }
