@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-@file:OptIn(ExperimentalComposeUiApi::class)
+@file:OptIn(ExperimentalComposeUiApi::class, ExperimentalAnimatableApi::class)
 
 package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.util
 
@@ -110,7 +110,6 @@ class SceneScope internal constructor(
     }
 }
 
-@OptIn(ExperimentalAnimatableApi::class)
 fun Modifier.animateSizeAndSkipToFinalLayout() = composed {
     val sizeAnimation = remember {
         DeferredTargetAnimation(IntSize.VectorConverter)
