@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout
+package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced
 
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.RadioButton
