@@ -1,4 +1,4 @@
-package com.appmason.composelayoutplayground.ui.screens
+package com.appmason.composelayoutplayground.ui.screens.modifier
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Arrangement

@@ -1,4 +1,4 @@
-package com.appmason.composelayoutplayground.ui.screens
+package com.appmason.composelayoutplayground.ui.screens.instrinsic
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
