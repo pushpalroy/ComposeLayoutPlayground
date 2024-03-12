@@ -10,11 +10,12 @@ import androidx.compose.ui.Modifier
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithApproachLayoutModifier
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithApproachLayoutModifier2
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithCustomApproachLayoutModifierNode
-import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithAnimatedContentSize
-import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithFlowRow
-import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithLazyColumn
-import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithMovableContent
-import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithPopularBoxWithConstraintsUsage
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples.LookaheadWithAnimatedContentSize
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples.LookaheadWithFlowRow
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples.LookaheadWithLazyColumn
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples.LookaheadWithMovableContent
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples.LookaheadWithPopularBoxWithConstraintsUsage
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples.SharedElementExplorationDemo
 import com.appmason.composelayoutplayground.ui.theme.ComposeLayoutPlaygroundTheme
 
 class MainActivity : ComponentActivity() {
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
                     // ModifierChainExample2()
 
                     // Look Ahead Examples
-                    LookAheadWithApproachLayoutModifier()
+                    // LookAheadWithApproachLayoutModifier()
                     // LookAheadWithApproachLayoutModifier2()
                     // LookAheadWithCustomApproachLayoutModifierNode()
 
@@ -46,6 +47,7 @@ class MainActivity : ComponentActivity() {
                     // LookaheadWithLazyColumn()
                     // LookaheadWithMovableContent()
                     // LookaheadWithFlowRow()
+                    SharedElementExplorationDemo()
                 }
             }
         }

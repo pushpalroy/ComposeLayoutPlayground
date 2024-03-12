@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced
+package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples
 
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.core.MutableTransitionState

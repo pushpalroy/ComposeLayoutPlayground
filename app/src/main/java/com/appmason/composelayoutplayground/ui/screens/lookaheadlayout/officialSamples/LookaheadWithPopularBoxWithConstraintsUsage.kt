@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced
+package com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.officialSamples
 
 import androidx.compose.animation.core.animateDpAsState
 import androidx.compose.foundation.Image
