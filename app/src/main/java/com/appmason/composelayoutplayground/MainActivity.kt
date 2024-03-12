@@ -8,6 +8,7 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithApproachLayoutModifier
+import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithApproachLayoutModifier2
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.LookAheadWithCustomApproachLayoutModifierNode
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithAnimatedContentSize
 import com.appmason.composelayoutplayground.ui.screens.lookaheadlayout.advanced.LookaheadWithFlowRow
@@ -36,6 +37,7 @@ class MainActivity : ComponentActivity() {
 
                     // Look Ahead Examples
                     LookAheadWithApproachLayoutModifier()
+                    // LookAheadWithApproachLayoutModifier2()
                     // LookAheadWithCustomApproachLayoutModifierNode()
 
                     // Look Ahead Advanced Examples

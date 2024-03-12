@@ -179,14 +179,9 @@ fun Modifier.animateBoundsInScope(): Modifier = composed {
             .run {
                 layout(width, height) {
                     coordinates?.let {
-                        val target =
-                            lookaheadScopeCoordinates.localLookaheadPositionOf(it)
-                                .round()
+                        val target = lookaheadScopeCoordinates.localLookaheadPositionOf(it).round()
                         val animOffset = offsetAnim.updateTarget(target, scope, spring())
-                        val current = lookaheadScopeCoordinates.localPositionOf(
-                            it,
-                            Offset.Zero
-                        ).round()
+                        val current = lookaheadScopeCoordinates.localPositionOf(it, Offset.Zero).round()
                         val (x, y) = animOffset - current
                         place(x, y)
                     } ?: place(0, 0)
