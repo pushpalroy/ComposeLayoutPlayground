@@ -251,6 +251,7 @@ fun ContainerTransformAnimationWithLookahead() {
                                     attributeImage(Modifier.size(32.dp))
                                     Spacer(Modifier.height(8.dp))
                                     attributeTitle(Modifier.height(16.dp).fillMaxWidth())
+                                    attributeSubtitle(Modifier.size(0.dp))
                                 }
                             }
                         }
@@ -268,12 +269,12 @@ fun Modifier.animateLayout(): Modifier = composed {
     val offsetAnim = remember { DeferredTargetAnimation(IntOffset.VectorConverter) }
     val scope = rememberCoroutineScope()
     this.approachLayout(
-        isMeasurementApproachComplete = {
-            sizeAnim.updateTarget(it, scope, tween(1800))
+        isMeasurementApproachComplete = { lookaheadSize ->
+            sizeAnim.updateTarget(lookaheadSize, scope, tween(1800))
             sizeAnim.isIdle
         },
-        isPlacementApproachComplete = {
-            val target = lookaheadScopeCoordinates.localLookaheadPositionOf(it)
+        isPlacementApproachComplete = { lookaheadCoordinates ->
+            val target = lookaheadScopeCoordinates.localLookaheadPositionOf(lookaheadCoordinates)
             offsetAnim.updateTarget(target.round(), scope, tween(1800))
             offsetAnim.isIdle
         }
